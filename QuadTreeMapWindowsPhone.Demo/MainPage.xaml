@@ -1,0 +1,16 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="QuadTreeMapWindowsPhone.Demo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:quadTreeMap="clr-namespace:QuadTreeMap;assembly=QuadTreeMap"
+    mc:Ignorable="d"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <quadTreeMap:QTMap x:Name="Map"></quadTreeMap:QTMap>
+
+</phone:PhoneApplicationPage>

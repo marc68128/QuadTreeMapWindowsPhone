@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="QuadTreeMap.QTMap"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:maps="clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+
+    <UserControl.Resources>
+        
+        <ControlTemplate x:Name="BucketDefaultTemplate">
+            <Grid>
+                <Ellipse Height="30" Width="30" Fill="Black"></Ellipse>
+                <TextBlock Text="{Binding Count}" Foreground="White" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Name="PushPinDefaultTemplate">
+           <Image Source="/Assets/pushpin.png" Height="30"></Image>
+        </ControlTemplate>
+
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <maps:Map x:Name="Map">
+        </maps:Map>
+    </Grid>
+</UserControl>
